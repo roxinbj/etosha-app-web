@@ -37,33 +37,38 @@
       <h3>Mammal Guide</h3>
       <p>
         <strong> Etosha specific information </strong>of all mammals found in
-        the Etosha.
+        the Etosha. Comprehensive scientific information is been summarized for you, 
+        so that you are not owerwelmed by loads of information, and presented in a 
+        user-friendly format, supported by illustrating images.
       </p>
     </div>
   </div>
 
   <!-- etosha map -->
-  <div class="etosha-map">
-    <div class="etosha-second">
+  <div class="mammal-guide">
+    <div class="mammal-second">
       <h3>Etosha Map</h3>
       <p>
         Detailed <strong> offline map </strong> of the complete Etosha National
-        Park.
+        Park. Scrollable and zoomable for easier navigation. 
       </p>
     </div>
-    <div class="etosha-first">
+    <div class="mammal-first">
       <img src="../assets/etoshaMap.png" alt="" />
     </div>
   </div>
 
   <!-- insider tips -->
-  <div class="insider-tips">
-    <div class="insider-first">
+  <div class="mammal-guide">
+    <div class="mammal-first">
       <img src="../assets/insiderTips.png" alt="" />
     </div>
-    <div class="insider-second">
+    <div class="mammal-second">
       <h3>Insider Tips</h3>
-      <p>Etosha specific information to all mammals found in the Etosha.</p>
+      <p>Additional features like todays <strong> Gate Opening- and Closing time 
+      </strong> or  <strong> Game Drive Tips </strong> from experienced local Etosha experts
+      are available. A detailed camp description with available facilities of each Etosha Camp 
+      is furthermore attached.</p>
     </div>
   </div>
   <OurMission />
@@ -107,7 +112,7 @@ export default {
 
 <style lang="scss" scoped>
 .front-page {
-  height: 100vh;
+  height: 80vh;
   background-image: url("../assets/frontBg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -128,7 +133,7 @@ export default {
   display: flex;
   margin: 20px 0px;
   img {
-    width: 250px;
+    width: 220px;
     cursor: pointer;
   }
   .gimg {
@@ -171,6 +176,8 @@ export default {
   .mammal-first {
     img {
       max-width: 650px;
+      margin-left: 100px;
+      margin-right: 100px;
     }
   }
   .mammal-second {
@@ -178,6 +185,13 @@ export default {
       color: gray;
       font-size: 22px;
       margin-top: 5px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    h3 {
+      color: gray;
+      margin-left: 100px;
+      margin-right: 100px;
     }
   }
 }

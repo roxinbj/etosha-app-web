@@ -8,7 +8,7 @@
         <h3>Etosha App</h3>
         <p>
           Termite Software <br />
-          Address
+          info@termite-software.com
         </p>
       </div>
       <div class="third">
@@ -62,7 +62,7 @@ export default {
   justify-content: center;
   margin: 20px 0px;
   img {
-    width: 220px;
+    height: 80px;
     margin-left: 20px;
     cursor: pointer;
   }

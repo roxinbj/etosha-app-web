@@ -37,6 +37,7 @@ export default {};
   margin-top: 100px;
   h3 {
     margin-left: 6%;
+    color: gray;
     margin-bottom: 5%;
   }
 }

@@ -21,6 +21,7 @@ export default {};
   margin-top: 150px;
   h3 {
     margin-left: 5%;
+    color: gray;
     margin-bottom: 3%;
   }
 }

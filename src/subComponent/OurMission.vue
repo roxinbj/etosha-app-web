@@ -116,13 +116,13 @@ export default {};
       color: white;
     }
     li {
-      font-size: 16px;
+      font-size: 12px;
     }
   }
   .my-card {
     max-width: 300px;
     h3 {
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 }

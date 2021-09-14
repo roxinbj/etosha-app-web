@@ -28,6 +28,7 @@ export default {};
   margin-bottom: 150px;
   h3 {
     margin-left: 5%;
+    color: gray;
     margin-bottom: 5%;
   }
   .useful {
