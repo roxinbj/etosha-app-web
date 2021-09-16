@@ -20,11 +20,11 @@
       </div>
     </div>
     <!-- <div class="fourth"> -->
-    <q-card class="my-card fourth">
+    <!-- q-card class="my-card fourth">
       <q-card-section>
         <p>Every app purchase supports a local animal welfare program!</p>
       </q-card-section>
-    </q-card>
+    </q-card-->
     <!-- </div> -->
   </div>
 
