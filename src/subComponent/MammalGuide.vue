@@ -9,9 +9,14 @@
       </div>
       <div class="mammal-second">
         <p>
-          For each mammal you have a detailed information page with 6 well
-          structured categories where you can enough information about that
-          animal.
+          Each mammal is portrayed with numerous well spotted images. 
+          Some quick facts are shown below and if you are interested in more information, 
+          a button leads you to the detailed information page. <br>
+          Information is clusterd in six categories which makes the navigation very user friendly.
+          You can find texts about its appearance, its social behavior, its diet and many more.<br>
+          Even <strong> Etosha specific information </strong> is included, eg. stating what makes the Etosha lion so unique.
+          You also find pages illustrating the difference between two often mistaken animals, like Cheetah and Leopard.
+          Here are some of the information you will find:
         </p>
         <ul>
           <li>Fun Facts</li>
@@ -53,7 +58,7 @@ export default {};
 .mammal-second {
   max-width: 550px;
   p {
-    font-size: 30px;
+    font-size: 22px;
   }
   li {
     font-size: 25px;

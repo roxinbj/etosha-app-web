@@ -38,8 +38,8 @@
       <p>
         <strong> Etosha specific information </strong>of all mammals found in
         the Etosha. Comprehensive scientific information is been summarized for you, 
-        so that you are not owerwelmed by loads of information, and presented in a 
-        user-friendly format, supported by illustrating images.
+        so that you are not owerwelmed by loads of information. It is presented in a 
+        user-friendly format and supported by illustrating images.
       </p>
     </div>
   </div>
@@ -66,9 +66,8 @@
     <div class="mammal-second">
       <h3>Insider Tips</h3>
       <p>Additional features like todays <strong> Gate Opening- and Closing time 
-      </strong> or  <strong> Game Drive Tips </strong> from experienced local Etosha experts
-      are available. A detailed camp description with available facilities of each Etosha Camp 
-      is furthermore attached.</p>
+      </strong> or  <strong> Game Drive Tips </strong> of experienced local Etosha experts. 
+      Furthermore, you find detailed infos to each Etosha Camp together with their contact details.</p>
     </div>
   </div>
   <OurMission />

@@ -6,12 +6,13 @@
         <img src="../assets/features/sightings.png" alt="" />
       </div>
       <div class="useful-second">
-        <p>Your will find some more usefull information pages like</p>
+        <p>Your will find some more usefull information pages like:</p>
         <ul>
           <li>Gate Opening and Closing Numbers</li>
           <li>Emergency Contact Numbers</li>
           <li>Camp Information</li>
-          <li>Game Drive Insider Tips</li>
+          <li>Local Game Drive Insider Tips</li>
+          <li>Etosha History</li> 
         </ul>
       </div>
     </div>
@@ -44,11 +45,11 @@ export default {};
   .useful-second {
     max-width: 600px;
     p {
-      font-size: 30px;
+      font-size: 22px;
     }
     li {
       margin-left: 10%;
-      font-size: 25px;
+      font-size: 22px;
     }
   }
 }

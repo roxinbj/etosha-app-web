@@ -8,14 +8,15 @@
       <div class="sight-second">
         <p>
           Fill your own collection album with your sights that you have seen!
-          Color up your Etosha trip
+          Color up your Etosha experience.
         </p>
         <q-card class="my-card">
           <q-card-section>
             <p class="text-h5">Planed feature extension</p>
             <p>
-              Soon we are planing to sync the sights of all users so that you do
-              not miss it if the car behind you just spotted a lion.
+              Soon we are planing to sync the sights of all users. 
+              You will be notified as soon as an other user reported his/her sight.
+              Rhinos and pandolins will for conservation reasons not be listed. 
             </p>
           </q-card-section>
         </q-card>
@@ -51,12 +52,13 @@ export default {};
   max-width: 600px;
   margin-bottom: 5%;
   p {
-    font-size: 30px;
+    font-size: 22px;
   }
   .my-card {
     background: #cb945e;
     .text-h5 {
       font-weight: bold;
+      font-size: 22px;
     }
   }
 }

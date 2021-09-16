@@ -34,10 +34,13 @@ export default {};
     text-align: center;
     color: white;
   }
+  h3 {
+    font-size: 30px;
+  }
   li {
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 22px;
   }
   img {
     max-width: 500px;
@@ -73,6 +76,7 @@ export default {};
       margin-top: 30px;
       text-align: center;
       color: white;
+      font-size: 24px;
     }
     li {
       margin-top: 20px;

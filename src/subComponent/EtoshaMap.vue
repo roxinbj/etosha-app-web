@@ -6,7 +6,9 @@
         <img src="../assets/features/etoMap.png" alt="" />
       </div>
       <div class="etosha-second">
-        <p>Offline Map of the complete Etosha National Park</p>
+        <p>Offline Map of the complete Etosha National Park. 
+        Zoomable and scrollable for better readablility. 
+        Click on a camp and you will be redirected to more camp information.</p>
       </div>
     </div>
   </div>
@@ -38,7 +40,7 @@ export default {};
 .etosha-second {
   max-width: 600px;
   p {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
