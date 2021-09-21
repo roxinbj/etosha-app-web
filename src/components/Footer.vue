@@ -8,7 +8,7 @@
         <h3>Etosha App</h3>
         <p>
           Termite Software <br />
-          info@termite-software.com
+          info@etosha-app.com
         </p>
       </div>
       <div class="third">

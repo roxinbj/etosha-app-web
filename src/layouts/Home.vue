@@ -310,6 +310,12 @@ strong {
         color: gray;
         font-size: 16px;
         margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      h3 {
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }
@@ -414,8 +420,14 @@ strong {
     .mammal-second {
       padding: 20px;
       margin-left: 3%;
+      p {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
       h3 {
         font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }
