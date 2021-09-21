@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/'
+    //publicPath: '/etosha-app-web/'
   }
