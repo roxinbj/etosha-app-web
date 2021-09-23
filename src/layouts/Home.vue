@@ -5,22 +5,7 @@
       <div class="first">
         <h1>Etosha App</h1>
         <h6>Your digital Etosha guide</h6>
-        <form name="ask-question"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="ask-question" />
-  <p>
-    <label>Your Name: <input type="text" name="name"/></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email"/></label>
-  </p>
-  <p>
-    <label>Message: <input type="textarea" name="message"/></label>
-  </p>
-  <p><button type="submit">Send</button></p>
-</form>
+        
         <div class="store">
           <img @click="preRelease" src="../assets/appleStore.png" alt="" />
           <img

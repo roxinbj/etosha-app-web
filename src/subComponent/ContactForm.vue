@@ -5,19 +5,22 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-    <form name="ask-question"
-    method="post"
+    <form @submit.prevent="hanldeSubmit" name="ask-question"
+    method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="ask-question" />
+    <p style="display: none;" class="hidden"> 
+      <label> Dont fill it in <input name="bot-field" /></label>
+
+    </p>
   <p>
-    <label>Your Name: <input type="text" name="name"/></label>
+    <label>Your Name: <input v-model="form.name" type="text" name="name"/></label>
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email"/></label>
+    <label>Your Email: <input v-model="form.email"  type="email" name="email"/></label>
   </p>
   <p>
-    <label>Message: <input type="textarea" name="message"/></label>
+    <label>Message: <input v-model="form.message" type="textarea" name="message"/></label>
   </p>
   <p><button type="submit">Send</button></p>
 </form>
@@ -28,7 +31,36 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    form: {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }),
+  methods: {
+    encode(data){
+      return Object.keys(data)
+      .map(key => '${encodeURIComponent(key)}=${encodeURIComponent(data[key])}')
+      .join('&')
+    },
+    hanldeSubmit(){
+      fetch('/', {
+        method: 'post',
+        headers: {
+          'Content-Type' : 'application/x-www-urlencoded'
+        },
+        body: this.encode({
+          'form-name': 'ask-question',
+          ...this.form
+        })
+      })
+      .then(() => console.log('successfully send'))
+      .catch(e => console.error(e))
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
