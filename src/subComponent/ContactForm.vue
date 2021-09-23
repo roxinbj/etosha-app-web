@@ -5,25 +5,19 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-    <form action="PUSH" data-netlify="true">
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-									<div class="field">
-										<div data-netlify-recaptcha="true"> </div>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form>
+    <form name="simple-form" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="simple-form"/>
+  <p>
+    <label>Your Name: <input type="text" name="name"/></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email"/></label>
+  </p>
+  <p>
+    <label>Message: <input type="textarea" name="message"/></label>
+  </p>
+  <p><button type="submit">Send</button></p>
+</form>
     
 
     
