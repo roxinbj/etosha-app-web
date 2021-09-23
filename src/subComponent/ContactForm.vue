@@ -5,10 +5,11 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-    <form name="ask-question"
+    <form @submit.prevent="hanldeSubmit" name="ask-question"
     method="POST"
     data-netlify="true"
-    data-netlify-honeypot="bot-field">
+    data-netlify-honeypot="bot-field"
+    enctype="application/x-www-form-urlencoded">
     <p style="display: none;" class="hidden"> 
       <label> Dont fill it in <input name="bot-field" /></label>
 
@@ -66,7 +67,6 @@ export default {
 <style lang="scss" scoped>
 
 
-
 .contact-form {
   max-width: 600px;
   margin: 50px auto;
@@ -80,6 +80,7 @@ export default {
     margin-top: 10px;
   }
 }
+
 //form {
 //  display: flex;
 //  .q-input {
@@ -165,8 +166,8 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-  .contact-form {
-    max-width: 340px;
-  }
+  //.contact-form {
+  //  max-width: 340px;
+  //}
 }
 </style>

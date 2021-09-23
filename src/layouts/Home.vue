@@ -1,5 +1,6 @@
 <template>
   <Navbar />
+  
   <div class="front-page">
     <div class="contents">
       <div class="first">
@@ -20,6 +21,7 @@
         <img src="../assets/phone.png" alt="" />
       </div>
     </div>
+
     <!-- <div class="fourth"> -->
     <!-- q-card class="my-card fourth">
       <q-card-section>
@@ -111,6 +113,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .front-page {
   height: 80vh;
   background-image: url("../assets/frontBg.png");
