@@ -5,8 +5,11 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-    <form name="simple-form" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="simple-form"/>
+    <form name="ask-question"
+    method="post"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="ask-question" />
   <p>
     <label>Your Name: <input type="text" name="name"/></label>
   </p>
