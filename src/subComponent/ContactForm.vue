@@ -5,10 +5,27 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-    <form name="contact" method="POST" data-netlify="true">
+    <form action="mailto:contact@etosha-app.com">
       <q-input outlined type="text" label="Name" />
       <q-input style="margin-left: 20px" outlined type="email" label="Email" />
     </form>
+    
+    <form name="contact" method="POST" data-netlify="true">
+    <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  
+  <div>
+    <label>Message: <textarea name="message"></textarea></label>
+  </div>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
     <div class="text">
       <q-input
         filled
