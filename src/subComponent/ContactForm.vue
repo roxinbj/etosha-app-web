@@ -5,7 +5,7 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-    <form name="ask-question"
+    <form @submit.prevent="hanldeSubmit" name="ask-question"
     method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field">
@@ -49,7 +49,7 @@ export default {
       fetch('/', {
         method: 'post',
         headers: {
-          'Content-Type' : 'application/x-www-urlencoded'
+          'Content-Type' : 'application/x-www-form-urlencoded'
         },
         body: this.encode({
           'form-name': 'ask-question',
