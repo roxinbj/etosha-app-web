@@ -9,21 +9,25 @@
       <q-input outlined type="text" label="Name" />
       <q-input style="margin-left: 20px" outlined type="email" label="Email" />
     </form-->
-    
-    <form name="contact" method="POST" data-netlify="true">
-    <p>
+    </dir>
+    <form name="ask-question" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="ask-question" />
+  <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
   <p>
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
   
-  <div>
+  <p>
     <label>Message: <textarea name="message"></textarea></label>
-  </div>
+  </p>
   <p>
     <button type="submit">Send</button>
   </p>
+
+
+    
 </form>
 
     <!--div class="text">
@@ -34,7 +38,7 @@
       />
       <button>Submit</button>
     </div-->
-  </dir>
+  
 </template>
 
 <script>
