@@ -6,12 +6,12 @@
       line.
     </p>
     <form @submit.prevent="hanldeSubmit" name="ask-question"
-    method="POST"
+    method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     enctype="application/x-www-form-urlencoded">
     <p style="display: none;" class="hidden"> 
-      <label> Dont fill it in <input name="bot-field" /></label>
+      <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
 
     </p>
   <p>
