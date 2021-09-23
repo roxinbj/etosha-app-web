@@ -1,102 +1,38 @@
 <template>
-  <dir class="contact-form">
-    <h4>We would love to hear from you</h4>
-    <p>
-      Whether you have questions, suggestions, or just want to say hi, drop us a
-      line.
-    </p>
-    <!--form action="mailto:contact@etosha-app.com">
-      <q-input outlined type="text" label="Name" />
-      <q-input style="margin-left: 20px" outlined type="email" label="Email" />
-    </form-->
-    </dir>
-    <form name="ask-question" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+  <form
+    name="ask-question"
+    method="post"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    >
     <input type="hidden" name="form-name" value="ask-question" />
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-
-
-    
-</form>
-
-    <!--div class="text">
-      <q-input
-        filled
-        type="textarea"
-        placeholder="Write your message here..."
+    <label v-for="(panelist, index) in panelists" :key="index">
+      <input
+        type="radio"
+        name="panelist"
+        :value="panelist"
+        @input="ev => updatePanelist"
+        :checked="panelist === currentPanelist"
       />
-      <button>Submit</button>
-    </div-->
-  
+      <span>{{ panelist }}</span>
+    </label>
+    ...
+    <button>Submit</button>
+  </form>
 </template>
-
 <script>
-export default {};
+export default {
+  name: "QAForm",
+  methods: {
+    updatePanelist (ev) {
+      this.currentPanelist = ev.target.value
+    }
+  },
+  data () {
+    return {
+      panelists: ['Evan You', 'Chris Fritz'],
+      currentPanelist: 'Evan You'
+    }
+  }
+}
 </script>
-
-<style lang="scss" scoped>
-.contact-form {
-  max-width: 600px;
-  margin: 50px auto;
-  h4 {
-    text-align: center;
-  }
-  p {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-    margin-top: 10px;
-  }
-}
-form {
-  display: flex;
-  .q-input {
-    //   margin-left: 10px;
-    width: 50%;
-  }
-}
-.text {
-  margin-top: 20px;
-  width: 100%;
-}
-
-button {
-  border-radius: 3px;
-  width: 100%;
-  height: 50px;
-  outline: none;
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: #cb945e;
-  transition: all cubic-bezier(0.17, 0.67, 0.83, 0.67) 0.3s;
-  margin-top: 20px;
-  font-size: 20px;
-}
-button:hover {
-  background-color: #e9b37c;
-  color: white;
-  box-shadow: 0.1px 0px 20px 0.01px #e9b37c;
-  transform: scale(1.02);
-}
-button:focus {
-  background-color: #ffd8b1;
-}
-
-@media (max-width: 768px) {
-  .contact-form {
-    max-width: 340px;
-  }
-}
-</style>
