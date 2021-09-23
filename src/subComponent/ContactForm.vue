@@ -5,7 +5,7 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-    <form @submit.prevent="hanldeSubmit" name="ask-question"
+    <form name="ask-question"
     method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field">
