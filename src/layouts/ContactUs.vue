@@ -28,6 +28,7 @@ export default {
   setup() {
     useMeta(metaData);
   },
+  name: 'ContactUs'
 };
 </script>
 

@@ -1,39 +1,35 @@
 <template>
-  <dir class="contact-form">
-    <h4>We would love to hear from you</h4>
-    <p>
-      Whether you have questions, suggestions, or just want to say hi, drop us a
-      line.
-    </p>
-    <form @submit.prevent="hanldeSubmit" name="ask-question"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    enctype="application/x-www-form-urlencoded">
+  <div class="contact-form">
+    <h1>This is an about page</h1>
+    <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
     <p style="display: none;" class="hidden"> 
-      <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
-
+    <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
     </p>
-  <p>
-    <label>Your Name: <input v-model="form.name" type="text" name="name"/></label>
-  </p>
-  <p>
-    <label>Your Email: <input v-model="form.email"  type="email" name="email"/></label>
-  </p>
-  <p>
-    <label>Message: <input v-model="form.message" type="textarea" name="message"/></label>
-  </p>
-  <p><button type="submit">Send</button></p>
-</form>
-    
-
-    
-  </dir>
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+									<div class="field">
+										<div data-netlify-recaptcha="true"> </div>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+              
+  </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
+  /*data: () => ({
     form: {
       name: '',
       email: '',
@@ -61,6 +57,8 @@ export default {
       .catch(e => console.error(e))
     }
   }
+  */
+  name: 'ContactForm',
 };
 </script>
 
