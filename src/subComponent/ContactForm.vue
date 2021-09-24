@@ -1,29 +1,25 @@
 <template>
   <div class="contact-form">
-    <h1>This is an about page</h1>
     <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
     <p style="display: none;" class="hidden"> 
-    <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
     </p>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-									<div class="field">
-										<div data-netlify-recaptcha="true"> </div>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form>
-              
+    <h4>We would love to hear from you</h4>
+    <p>
+      Whether you have questions, suggestions, or just want to say hi, drop us a
+      line.
+    </p>
+      <q-input outlined type="text" placeholder="Name" name="name" />
+      <q-input outlined type="email" label="Email" name="email"/>
+    <div class="text">
+      <q-input
+        filled
+        type="textarea"
+        name="message"
+        placeholder="Write your message here..."
+      />
+      <button>Submit</button>
+    </div>
+    </form>
   </div>
 </template>
 
@@ -82,59 +78,59 @@ export default {
 //form {
 //  display: flex;
 //  .q-input {
-//    //   margin-left: 10px;
+//    margin-left: 10px;
 //    width: 50%;
 //  }
 //}
-form {
-		margin: 0 0 2rem 0;
-	}
-
-		form > :last-child {
-			margin-bottom: 0;
-		}
-
-		form > .fields {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			margin: -2rem 0 2rem -2rem;
-			width: calc(100% + 4rem);
-		}
-
-			form > .fields > .field {
-				-moz-flex-grow: 0;
-				-webkit-flex-grow: 0;
-				-ms-flex-grow: 0;
-				flex-grow: 0;
-				-moz-flex-shrink: 0;
-				-webkit-flex-shrink: 0;
-				-ms-flex-shrink: 0;
-				flex-shrink: 0;
-				padding: 2rem 0 0 2rem;
-				width: calc(100% - 2rem);
-			}
-
-				form > .fields > .field > :last-child {
-					margin-bottom: 0;
-				}
-
-				form > .fields > .field.half {
-					width: calc(50% - 1rem);
-				}
-
-				form > .fields > .field.third {
-					width: calc(100%/3 - 0.66667rem);
-				}
-
-				form > .fields > .field.quarter {
-					width: calc(25% - 0.5rem);
-				}
+//form {
+//		margin: 0 0 2rem 0;
+//	}
+//
+//		form > :last-child {
+//			margin-bottom: 0;
+//		}
+//
+//		form > .fields {
+//			display: -moz-flex;
+//			display: -webkit-flex;
+//			display: -ms-flex;
+//			display: flex;
+//			-moz-flex-wrap: wrap;
+//			-webkit-flex-wrap: wrap;
+//			-ms-flex-wrap: wrap;
+//			flex-wrap: wrap;
+//			margin: -2rem 0 2rem -2rem;
+//			width: calc(100% + 4rem);
+//		}
+//
+//			form > .fields > .field {
+//				-moz-flex-grow: 0;
+//				-webkit-flex-grow: 0;
+//				-ms-flex-grow: 0;
+//				flex-grow: 0;
+//				-moz-flex-shrink: 0;
+//				-webkit-flex-shrink: 0;
+//				-ms-flex-shrink: 0;
+//				flex-shrink: 0;
+//				padding: 2rem 0 0 2rem;
+//				width: calc(100% - 2rem);
+//			}
+//
+//				form > .fields > .field > :last-child {
+//					margin-bottom: 0;
+//				}
+//
+//				form > .fields > .field.half {
+//					width: calc(50% - 1rem);
+//				}
+//
+//				form > .fields > .field.third {
+//					width: calc(100%/3 - 0.66667rem);
+//				}
+//
+//				form > .fields > .field.quarter {
+//					width: calc(25% - 0.5rem);
+//				}
 .text {
   margin-top: 20px;
   width: 100%;
