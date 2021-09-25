@@ -1,1 +1,3 @@
-/contactus   /index.html   200
+/help    /contactus   301
+/contactus   /   301
+#/contactus   /index.html   200

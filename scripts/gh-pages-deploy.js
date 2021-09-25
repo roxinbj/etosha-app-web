@@ -12,7 +12,7 @@ const fs = require("fs");
     console.log("Clean started...");
     await execa("quasar", ["clean"]);
     console.log("Building started...");
-    await execa("quasar", ["b","-P"]);
+    await execa("quasar", ["build"]);
     // Understand if it's dist or build folder
     await execa("cp", ["_redirects","dist/spa/_redirects"]);
     const folderName = fs.existsSync("dist/spa") ? "dist/spa" : "build";
