@@ -1,6 +1,6 @@
 <template>
   <div class="contact-form">
-    <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded">
+    <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
     <p style="display: none;" class="hidden"> 
     </p>
     <h4>We would love to hear from you</h4>
@@ -8,14 +8,16 @@
       Whether you have questions, suggestions, or just want to say hi, drop us a
       line.
     </p>
-      <q-input outlined type="text" placeholder="Name" name="name" />
-      <q-input outlined type="email" label="Email" name="email"/>
+      <q-input v-model="name" outlined type="text" placeholder="Name" name="name" required/>
+      <q-input v-model="email" outlined type="email" label="Email" name="email" required/>
     <div class="text">
       <q-input
+        v-model="message"
         filled
         type="textarea"
         name="message"
         placeholder="Write your message here..."
+        required
       />
       <button>Submit</button>
     </div>
@@ -24,7 +26,15 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
+  setup() {
+    const name = ref(null);
+    const email = ref(null);
+    const message = ref(null);
+
+    return { name, email, message };
+  },
   /*data: () => ({
     form: {
       name: '',
