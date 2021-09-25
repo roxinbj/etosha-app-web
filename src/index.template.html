@@ -17,6 +17,22 @@
   </head>
   <body>
     <!-- DO NOT touch the following DIV -->
+    <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <p style="display: none;" class="hidden">
+          <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
+
+      </p>
+      <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+          <label>Message: <input type="textarea" name="message" /></label>
+      </p>
+      <p><button type="submit">Send</button></p>
+  </form>
     <div id="q-app"></div>
   </body>
 </html>

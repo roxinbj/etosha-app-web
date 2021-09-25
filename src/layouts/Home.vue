@@ -1,10 +1,12 @@
 <template>
   <Navbar />
+  
   <div class="front-page">
     <div class="contents">
       <div class="first">
         <h1>Etosha App</h1>
         <h6>Your digital Etosha guide</h6>
+        
         <div class="store">
           <img @click="preRelease" src="../assets/appleStore.png" alt="" />
           <img
@@ -19,6 +21,7 @@
         <img src="../assets/phone.png" alt="" />
       </div>
     </div>
+
     <!-- <div class="fourth"> -->
     <!-- q-card class="my-card fourth">
       <q-card-section>
@@ -110,6 +113,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .front-page {
   height: 80vh;
   background-image: url("../assets/frontBg.png");

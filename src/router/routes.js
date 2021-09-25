@@ -15,6 +15,7 @@ const routes = [
   {
     path: "/contactus",
     name: "ContactUs",
+    //component: ContactUs,
     component: () => import("layouts/ContactUs.vue"),
   },
   {
