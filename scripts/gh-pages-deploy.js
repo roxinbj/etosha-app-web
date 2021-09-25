@@ -5,7 +5,7 @@ const fs = require("fs");
   try {
     console.log("Push changes first...");
     await execa("git", ["add", "."]);
-    await execa("git", ["commit", "-m","Deployment"]);
+    await execa("git", ["commit", "-m","\"Deployment\""]);
     await execa("git", ["push"]);
     await execa("git", ["checkout", "--orphan", "gh-pages"]);
     // eslint-disable-next-line no-console
