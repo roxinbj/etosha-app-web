@@ -1,20 +1,27 @@
 <template>
   <div class="contact-form">
     <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
-    <p style="display: none;" class="hidden">
-          <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
-
-      </p>
-      <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-          <label>Message: <input type="textarea" name="message" /></label>
-      </p>
-      <p><button type="submit">Send</button></p>
+    <p style="display: none;" class="hidden"> 
+    <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
+    </p>
+    <h4>We would love to hear from you</h4>
+    <p>
+      Whether you have questions, suggestions, or just want to say hi, drop us a
+      line.
+    </p>
+      <q-input v-model="name" outlined type="text" placeholder="Name" name="name" required/>
+      <q-input v-model="email" outlined type="email" label="Email" name="email" required/>
+    <div class="text">
+      <q-input
+        v-model="message"
+        filled
+        type="textarea"
+        name="message"
+        placeholder="Write your message here..."
+        required
+      />
+      <button>Submit</button>
+    </div>
     </form>
   </div>
 </template>
