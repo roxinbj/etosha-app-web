@@ -7,9 +7,10 @@
         <p>Subscribe and be informed as soon as a release is out</p>
       </q-card-section>
       <q-card-section>
-        <form>
+        <form name="subsribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
           <div class="input-wrapper">
-            <input type="email" placeholder="Email" name="name" required />
+            <input name="form-name" value="subscribe" type="hidden" />
+            <input type="email" placeholder="Email" name="email" required />
             <button>Subscribe</button>
           </div>
         </form>
