@@ -3,12 +3,21 @@
     <h4>Get Product Updates</h4>
     <p>Be the first to know when we release new features!</p>
     <p>(Unsubscribe at any time)</p>
-    <form @submit.prevent="formSubmit">
+    <!--form @submit.prevent="formSubmit">
       <div class="input-wrapper">
         <input type="email" placeholder="Email" name="name" required />
         <button>Subscribe</button>
       </div>
-    </form>
+    </form-->
+    <form name="enter-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+          <p style="display: none;" class="hidden"> 
+          <label> Dont fill it in <input name="form-name" value="enter-subscribe" type="hidden" /></label>
+          </p>
+          <div class="input-wrapper">
+            <input type="email" placeholder="Email" name="email" required />
+            <button>Subscribe</button>
+          </div>
+        </form>
   </div>
 </template>
 
