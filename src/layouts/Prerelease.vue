@@ -7,9 +7,9 @@
         <p>Subscribe and be informed as soon as a release is out</p>
       </q-card-section>
       <q-card-section>
-        <form name="subsribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+        <form name="enter-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
           <p style="display: none;" class="hidden"> 
-          <label> Dont fill it in <input name="form-name" value="subscribe" type="hidden" /></label>
+          <label> Dont fill it in <input name="form-name" value="enter-subscribe" type="hidden" /></label>
           </p>
           <div class="input-wrapper">
             <input type="email" placeholder="Email" name="email" required />

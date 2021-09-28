@@ -1,0 +1,41 @@
+<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+									<div class="field">
+										<div data-netlify-recaptcha="true"> </div>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+
+
+                            <p style="display: none;" class="hidden"> 
+    <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
+    </p>
+    <h4>We would love to hear from you</h4>
+    <p>
+      Whether you have questions, suggestions, or just want to say hi, drop us a
+      line.
+    </p>
+      <q-input v-model="name" outlined type="text" placeholder="Name" name="name" required/>
+      <q-input v-model="email" outlined type="email" label="Email" name="email" required/>
+    <div class="text">
+      <q-input
+        v-model="message"
+        filled
+        type="textarea"
+        name="message"
+        placeholder="Write your message here..."
+        required
+      />
+      <button>Submit</button>
+    </div>
