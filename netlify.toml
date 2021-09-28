@@ -5,3 +5,19 @@
   force = false
   query = {path = ":path"} #  apply this rule for /old-path?path=example
   conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+  from = "/prerelease"
+  to = "/"
+  status = 200
+  force = false
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
+  conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+  from = "/test"
+  to = "/"
+  status = 200
+  force = false
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
+  conditions = {Language = ["en","es"], Country = ["US"]}
