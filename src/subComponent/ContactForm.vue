@@ -1,6 +1,6 @@
 <template>
   <div class="contact-form">
-    <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+    <form name="ask-question" method="post" data-netlify="true" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
     <p style="display: none;" class="hidden"> 
     <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
     </p>
@@ -22,6 +22,7 @@
       />
       <button>Submit</button>
     </div>
+    <div data-netlify-recaptcha="true"></div>
     </form>
   </div>
 </template>
