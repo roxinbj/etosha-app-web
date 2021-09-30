@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- DO NOT touch the following DIV -->
-    <form name="ask-question" method="post" data-netlify="true" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field" hidden>
+    <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
       <p style="display: none;" class="hidden">
           <label> Dont fill it in <input name="form-name" value="ask-question" type="hidden" /></label>
 
@@ -32,7 +32,9 @@
           <label>Message: <input type="textarea" name="message" /></label>
       </p>
       <p><button type="submit">Send</button></p>
-      <div data-netlify-recaptcha="true"></div>
+      <div class="field">
+        <div data-netlify-recaptcha="true"> </div>
+      </div>
   </form>
   <form hidden name="enter-subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
     <p style="display: none;" class="hidden"> 
