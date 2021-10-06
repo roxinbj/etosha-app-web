@@ -3,7 +3,7 @@
   <div class="prerelease">
     <q-card class="my-card">
       <q-card-section>
-        <h4>Sorry, We have not launched yet</h4>
+        <h4>Sorry, We have not launched an Android version yet but we are working on it.</h4>
         <p>Subscribe and be informed as soon as a release is out</p>
       </q-card-section>
       <q-card-section>

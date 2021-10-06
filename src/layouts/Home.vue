@@ -8,7 +8,9 @@
         <h6>Your digital Etosha guide</h6>
         
         <div class="store">
-          <img @click="preRelease" src="../assets/appleStore.png" alt="" />
+          <a href="https://apps.apple.com/us/app/etosha-app/id1582052099">
+            <img src="../assets/appleStore.png" alt="" />
+          </a>
           <img
             class="gimg"
             @click="preRelease"

@@ -18,7 +18,9 @@
       </div>
     </div>
     <div class="store">
-      <img @click="preRelease" src="../assets/appleStore.png" alt="" />
+      <a href="https://apps.apple.com/us/app/etosha-app/id1582052099">
+         <img src="../assets/appleStore.png" alt="" />
+      </a>
       <img @click="preRelease" src="../assets/googleStore.png" alt="" />
     </div>
     <div class="copyright">Copyright © 2021 Termite Software</div>
@@ -33,7 +35,6 @@ export default {
     const preRelease = () => {
       router.push({ name: "Prerelease" });
     };
-
     const contactUs = () => {
       router.push({ name: "ContactUs" });
     };
