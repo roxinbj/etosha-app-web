@@ -23,6 +23,11 @@ const routes = [
     name: "Prerelease",
     component: () => import("layouts/Prerelease.vue"),
   },
+  {
+    path: "/termsAndConditions",
+    name: "TermsAndConditions",
+    component: () => import("layouts/TermsAndConditions.vue"),
+  },
 
   // Always leave this as last one,
   // but you can also remove it

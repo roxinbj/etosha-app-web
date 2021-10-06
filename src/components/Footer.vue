@@ -14,6 +14,7 @@
       <div class="third">
         <h3>Support</h3>
         <p style="cursor: pointer" @click="contactUs">Contact Us</p>
+        <p style="cursor: pointer" @click="termsAndConditions">Terms and Conditions</p>
       </div>
     </div>
     <div class="store">
@@ -36,7 +37,10 @@ export default {
     const contactUs = () => {
       router.push({ name: "ContactUs" });
     };
-    return { preRelease, contactUs };
+    const termsAndConditions = () => {
+      router.push({ name: "TermsAndConditions" });
+    };
+    return { preRelease, contactUs, termsAndConditions };
   },
 };
 </script>
