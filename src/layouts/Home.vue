@@ -41,8 +41,8 @@
     <div class="mammal-second">
       <h3>Mammal Guide</h3>
       <p>
-        <strong> Etosha specific information </strong>of all mammals found in
-        the Etosha. Comprehensive scientific information is been summarized for you, 
+        <strong> Etosha specific information </strong>on all mammals found in
+        the Etosha. Comprehensive scientific information has been summarized for you, 
         so that you are not owerwelmed by loads of information. It is presented in a 
         user-friendly format and supported by illustrating images.
       </p>
@@ -70,9 +70,9 @@
     </div>
     <div class="mammal-second">
       <h3>Insider Tips</h3>
-      <p>Additional features like todays <strong> Gate Opening- and Closing time 
-      </strong> or  <strong> Game Drive Tips </strong> of experienced local Etosha experts. 
-      Furthermore, you find detailed infos to each Etosha Camp together with their contact details.</p>
+      <p>Additional features like todays <strong> gate opening- and closing hours 
+      </strong> or  <strong> game drive tips </strong> of experienced local Etosha experts. 
+      Furthermore, you find detailed infos about each Etosha Camp together with their contact details.</p>
     </div>
   </div>
   <OurMission />

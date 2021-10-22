@@ -9,9 +9,9 @@
           parties
         </h3>
         <ul>
-          <li>Support Namibian software development</li>
-          <li>Save our precious wildlife</li>
           <li>Your visiting Etosha</li>
+          <li>Save our precious wildlife</li>
+          <li>Support Namibian software development</li>
         </ul>
       </q-card-section>
     </q-card>

@@ -7,8 +7,8 @@
       </div>
       <div class="etosha-second">
         <p>Offline Map of the complete Etosha National Park. 
-        Zoomable and scrollable for better readablility. 
-        Click on a camp and you will be redirected to more camp information.</p>
+        Zoomable and scrollable for better readability. 
+        Click on a camp and you will be redirected to more camp informations.</p>
       </div>
     </div>
   </div>

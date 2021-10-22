@@ -8,7 +8,7 @@
       <div class="sight-second">
         <p>
           Fill your own collection album with your sights that you have seen!
-          Color up your Etosha experience.
+          Colour up your Etosha experience.
         </p>
         <q-card class="my-card">
           <q-card-section>

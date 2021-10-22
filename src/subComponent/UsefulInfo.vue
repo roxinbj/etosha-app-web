@@ -8,7 +8,7 @@
       <div class="useful-second">
         <p>Your will find some more usefull information pages like:</p>
         <ul>
-          <li>Gate Opening and Closing Numbers</li>
+          <li>Gate Opening and Closing Hours</li>
           <li>Emergency Contact Numbers</li>
           <li>Camp Information</li>
           <li>Local Game Drive Insider Tips</li>

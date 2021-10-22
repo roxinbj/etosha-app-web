@@ -9,10 +9,10 @@
       </div>
       <div class="mammal-second">
         <p>
-          Each mammal is portrayed with numerous well spotted images. 
+          Each mammal is portrayed with numerous, well spotted images. 
           Some quick facts are shown below and if you are interested in more information, 
-          a button leads you to the detailed information page. <br>
-          Information is clusterd in six categories which makes the navigation very user friendly.
+          a button leads you to more detailed information. <br>
+          Information is clusterd in six categories which makes the navigation user friendly.
           You can find texts about its appearance, its social behavior, its diet and many more.<br>
           Even <strong> Etosha specific information </strong> is included, eg. stating what makes the Etosha lion so unique.
           You also find pages illustrating the difference between two often mistaken animals, like Cheetah and Leopard.
@@ -20,7 +20,7 @@
         </p>
         <ul>
           <li>Fun Facts</li>
-          <li>Etosha related Facts</li>
+          <li>Etosha Related Facts</li>
           <li>Conservation Status</li>
           <li>Diet</li>
           <li>Gender Difference</li>
