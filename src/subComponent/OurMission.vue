@@ -9,7 +9,7 @@
           parties
         </h3>
         <ul>
-          <li>Your visiting Etosha</li>
+          <li>You visiting Etosha</li>
           <li>Save our precious wildlife</li>
           <li>Support Namibian software development</li>
         </ul>
