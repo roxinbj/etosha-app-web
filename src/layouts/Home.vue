@@ -11,12 +11,9 @@
           <a href="https://apps.apple.com/us/app/etosha-app/id1582052099">
             <img src="../assets/appleStore.png" alt="" />
           </a>
-          <img
-            class="gimg"
-            @click="preRelease"
-            src="../assets/googleStore.png"
-            alt=""
-          />
+          <a href="https://play.google.com/store/apps/details?id=com.etosha">
+            <img src="../assets/googleStore.png" alt="" />
+          </a>
         </div>
       </div>
       <div class="third">
