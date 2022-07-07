@@ -7,6 +7,12 @@ Etosha App Your Digital Etosha Guide
 yarn
 ```
 
+### To build the webpage including redirects:
+'''bash
+npm run build
+'''
+
+
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
 quasar dev
