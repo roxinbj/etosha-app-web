@@ -1,5 +1,6 @@
 {
   "name": "etosha-app",
+  "start": "react-scripts --openssl-legacy-provider start",
   "version": "0.0.1",
   "description": "Etosha App Your Digital Etosha Guide",
   "productName": "Etosha App",
@@ -14,17 +15,18 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
+    "quasar": "^2.7.5",
     "vuex": "^4.0.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@quasar/app": "^3.0.0",
+    "@quasar/app": "^3.3.3",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
     "eslint-webpack-plugin": "^2.4.0",
-    "execa": "latest"
+    "execa": "latest",
+    "sitemap-webpack-plugin": "^1.1.1"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -38,7 +40,7 @@
     "last 5 Opera versions"
   ],
   "engines": {
-    "node": ">= 12.22.1",
+    "node": ">= 16.15.1",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
   }
