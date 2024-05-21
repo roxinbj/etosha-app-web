@@ -187,28 +187,40 @@ export default {
   name: 'TermsAndConditions'
 };
 </script>
-
 <style>
-
-.termsAndConditions{
-  
+.termsAndConditions {
   max-width: 600px;
   margin: 50px auto;
-  h4 {
-    font-size: 400px;
-
-  },
-  h3 {
-    font-size: 400px;
-
-  },
-  p {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 300;
-    margin-top: 10px;
-  }
 }
 
+.termsAndConditions h3 {
+  font-size: 24px; /* Adjust to desired size */
+}
 
+.termsAndConditions h4 {
+  font-size: 20px; /* Adjust to desired size */
+}
+
+.termsAndConditions h5 {
+  font-size: 18px; /* Add style for h5 if needed */
+}
+
+.termsAndConditions h6 {
+  font-size: 16px; /* Add style for h6 if needed */
+}
+
+.termsAndConditions p {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.termsAndConditions ul {
+  margin-left: 20px; /* Optional: add margin for better indentation */
+}
+
+.termsAndConditions li {
+  margin-top: 10px; /* Optional: add space between list items */
+}
 </style>
